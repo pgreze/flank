@@ -861,7 +861,7 @@ IosArgs
     @Test(expected = FlankConfigurationError::class)
     fun `invalid regex filter throws custom exception`() {
         val validTestMethods = mapOf("SampleXCTest" to listOf("test"))
-        filterTests(validTestMethods, testTargetsRgx = listOf("*."))
+        filterTests(validTestMethods, testTargets = listOf("*."))
     }
 
     @Test
